@@ -22,6 +22,13 @@ Install a self-hosted [Outline](https://github.com/outline/outline) wiki instanc
 2. Open `http://127.0.0.1:8888` and login to outline.
 3. Open `http://127.0.0.1:8888/uc/admin/auth/user/` to add new users.
 
+> [!CAUTION]
+> If you got the following message after running `make install`, then cancel the run (ctrl +c) and rerun `make install`.
+> 
+> `Something goes wrong: no such table: oidc_provider_rsakey`
+>
+> This is related with the authentication error, `Authentication failed – we were unable to sign you in at this time. Please try again.`
+
 ## scripts/config.sh
 
 The config file [scripts/config.sh.sample](scripts/config.sh.sample)
